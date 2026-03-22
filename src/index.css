@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  input[type='range'] {
+    @apply h-1 rounded-full appearance-none cursor-pointer;
+    background: theme('colors.stone.200');
+  }
+
+  .dark input[type='range'] {
+    background: theme('colors.stone.700');
+  }
+
+  input[type='range']::-webkit-slider-thumb {
+    @apply appearance-none w-4 h-4 rounded-full cursor-pointer;
+    background: theme('colors.stone.600');
+    margin-top: -6px;
+  }
+
+  .dark input[type='range']::-webkit-slider-thumb {
+    background: theme('colors.stone.400');
+  }
+
+  input[type='range']::-moz-range-thumb {
+    @apply w-4 h-4 rounded-full cursor-pointer border-0;
+    background: theme('colors.stone.600');
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full;
+    background: theme('colors.stone.300');
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background: theme('colors.stone.700');
+  }
+}
