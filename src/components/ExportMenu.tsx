@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { triggerExport } from '@/utils/export'
+import { triggerExport, exportJson } from "@/utils/export"
 import type { DungeonGraph } from '@/types'
 
 interface Props {
@@ -27,7 +27,7 @@ export function ExportMenu({ graph, canvasRef }: Props) {
 
   const handleCopyJson = async () => {
     if (!graph) return
-    const { exportJson } = await import('@/utils/export')
+
     await navigator.clipboard.writeText(exportJson(graph, { includeMetadata: true, prettyPrint: true }))
     setCopied(true)
     setTimeout(() => setCopied(false), 1800)

@@ -1,8 +1,7 @@
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import { DungeonCanvas } from './DungeonCanvas'
 import { useDungeon } from '@/hooks/useDungeon'
-import { useCanvas } from '@/hooks/useCanvas'
-import type { DungeonGraph, GeneratorConfig, Room, RoomTypeConfig } from '@/types'
+import type { GeneratorConfig, Room, RoomTypeConfig } from '@/types'
 
 interface PaneProps {
   label: 'A' | 'B'
@@ -16,11 +15,6 @@ function ComparePane({ label, isDark, roomTypes, config }: PaneProps) {
   const [input, setInput] = useState('')
   const [hoveredRoom, setHoveredRoom] = useState<Room | null>(null)
   const { graph, regenerate, isGenerating } = useDungeon()
-  const canvasRef = useRef<HTMLCanvasElement>(null)
-  const { canvasRef: hookCanvas, hoveredRoom: canvasHover } = useCanvas(graph, { isDark, roomTypes })
-
-  const merged = (canvasRef as unknown as typeof hookCanvas)
-  void merged
 
   const submit = () => {
     const trimmed = input.trim()

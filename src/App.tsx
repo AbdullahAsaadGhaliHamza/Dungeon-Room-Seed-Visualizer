@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { DungeonCanvas } from '@/components/DungeonCanvas'
 import { SeedInput } from '@/components/SeedInput'
 import { StatsBar } from '@/components/StatsBar'
@@ -203,7 +203,7 @@ export default function App() {
           flex items-center justify-between text-xs font-body text-stone-400 dark:text-stone-600">
           <span>Dungeon Seed Visualizer · MIT License</span>
           <a
-            href="https://github.com/yourusername/dungeon-seed-viz"
+            href="https://github.com/AbdullahAsaadGhaliHamza/Dungeon-Room-Seed-Visualizer"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-stone-600 dark:hover:text-stone-400 transition-colors"

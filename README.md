@@ -1,10 +1,12 @@
-# dungeon-seed-viz
+# Dungeon-Room-Seed-Visualizer
 
 A design preview tool for procedural dungeon generators. You type a seed string and get back a room layout graph so you can actually see what your seed produces before you wire it into anything.
 
 Most generators just run and spit out a result. The missing piece is a way to look at the *structure* of a seed: how many rooms, how they connect, where the loops are, how deep the boss room sits. That is what this does.
 
-**[Live demo](https://abdullahasaadghalihamza.github.io/Dungeon-Room-Seed-Visualizer)**
+![preview](docs/preview.png)
+
+**[Live demo](https://AbdullahAsaadGhaliHamza.github.io/Dungeon-Room-Seed-Visualizer)**
 
 ---
 
@@ -25,8 +27,8 @@ Most generators just run and spit out a result. The missing piece is a way to lo
 ## Setup
 
 ```bash
-git clone https://github.com/yourusername/dungeon-seed-viz
-cd dungeon-seed-viz
+git clone https://github.com/AbdullahAsaadGhaliHamza/Dungeon-Room-Seed-Visualizer
+cd Dungeon-Room-Seed-Visualizer
 npm install
 npm run dev
 ```
@@ -49,7 +51,7 @@ There is a workflow at `.github/workflows/deploy.yml` that handles this automati
 2. Set source to GitHub Actions
 3. Push to `main` and it deploys
 
-The URL will be `https://yourusername.github.io/dungeon-seed-viz`.
+The URL will be `https://AbdullahAsaadGhaliHamza.github.io/Dungeon-Room-Seed-Visualizer`.
 
 ---
 
