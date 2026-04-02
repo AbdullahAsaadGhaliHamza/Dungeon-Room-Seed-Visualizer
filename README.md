@@ -1,5 +1,7 @@
 # Dungeon-Room-Seed-Visualizer
 
+<img width="1920" height="1080" alt="Dungeon-Room-Seed-Visualizer" src="https://github.com/user-attachments/assets/a7b9850d-9945-4190-8475-82b12018780a" />
+
 A design preview tool for procedural dungeon generators. You type a seed string and get back a room layout graph so you can actually see what your seed produces before you wire it into anything.
 
 Most generators just run and spit out a result. The missing piece is a way to look at the *structure* of a seed: how many rooms, how they connect, where the loops are, how deep the boss room sits. That is what this does.
